@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"); /*this is a noto sans font that we have imported from google fonts*/
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif; /*now that we have imported the 'noto sans' font, we can use it */
+  height: 100%;
+}
+
+.container {
+  background: linear-gradient(135deg, #8a2be2, #4169e1); /*this is how we can blend colors along a straight line at the specified direction*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.content {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem; /*rem is a unique unit which provides padding relative to m*/
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+.logo {
+  width: 150px;
+  /* height: 100px; */
+  object-fit: contain; /*this prevents the image from getting streched or squashed*/
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="email"] {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: #8a2be2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out; /*this means that if there is a change in bg color, then take 0.3 secs to make the transition and the type of transition must be ease in out*/
+}
+
+button:hover {
+  background-color: #7a1dd1;
+}
