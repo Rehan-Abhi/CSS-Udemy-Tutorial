@@ -51,11 +51,11 @@
         bottom: 0;
         left: 0;
         background-color: #0a65c7;
-        transform: scaleX(0);         /*yea, this is shitty, i did not understand this*/
-        transition: transform 0.3s ease-in-out;
+        transform: scaleX(0);         /*this makes the horizontal width of the element 0*/
+        transition: transform 0.3s ease-in-out; /*this means that i there is a change in transform property, then take 0.3 secs to make the transition and keep the transition of ease in out type*/
       }
       .nav1 a:hover::after {
-        transform: scaleX(1);
+        transform: scaleX(1) /*this makes the horizontal width of the element equal to the size of the element on hovering over it*/;
       }
 
       .nav1 .login-btn {
