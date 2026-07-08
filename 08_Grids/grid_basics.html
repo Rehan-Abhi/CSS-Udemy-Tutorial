@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid introduction</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /*it is same as writing 1fr 1fr 1fr, this means that all three ccolumns get 1 fraction each*/
+        grid-template-rows: 100px 200px 100px; /*this means that first row gets 100px, second row gets 200 px and the third gets 100px*/
+        gap: 4px; 
+      }
+
+      .item {
+        background-color: orange;
+        border: 1px solid black;
+      }
+      .item1 {   /*this is the speciality of grid, we can style the elements of the grid in a very crazy way*/
+        grid-column: 1/3; /*this means the item1's column starts from 1st column and ends up at the start for 3rd column, that means it will cover the first 2 columns*/
+        grid-row: 1/2;  /*this means the the item1's row will start at the 1st row and end up at the start of 2nd row*/
+      }
+      .item2 {
+        grid-column: 3/4;
+        grid-row: 1/3;
+      }
+      .item6 {
+        grid-column: 2/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item item6">6</div>
+    </div>
+  </body>
+</html>
