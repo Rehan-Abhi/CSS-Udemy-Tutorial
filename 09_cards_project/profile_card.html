@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin Profile Card</title>
+</head>
+<style>
+    body{
+        background-color:  #121212;
+        padding: 0;
+        margin: 0;
+        color: #fff;
+    }
+
+    .card{
+        background-color: #1E1E1E;
+        height: auto;
+        width: 350px;
+        margin: 10vh auto;
+        border-radius: 25px;
+        padding: 25px;
+        margin-top: 250px;
+    }
+    h1{
+        text-align: center;
+    }
+
+    .image{
+        display: block;
+        position: relative;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 20px auto;
+        background-image: url('WhatsApp Image 2026-06-30 at 5.31.45 PM.jpeg');
+        background-size: cover;
+        background-position: 30% 10%;
+        
+    }
+
+    .about{
+        color: #666464;
+
+    }
+
+    #stats{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .label{
+        color: #666464 ;
+    }
+
+    .col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin: 15px
+        
+
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        
+    }
+    button{
+        background-color: #9f9595;
+        border: 0;
+        outline: 0;
+        height: 40px;
+        width: 100px;
+        border-radius: 10px;
+        color: #ffffff;
+        cursor: pointer;
+        
+    }
+
+    button:hover{
+        background-color: #454444;
+    }
+
+</style>
+<body>
+    <div class="card">
+    
+
+        <div class="image"></div>
+         <h1>Rehan Abhi</h1>
+
+        <div class="about">Hello!, I am Rehan Abhi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti error quod, consectetur distinctio nam vitae, temporibus.</div>
+
+        <div id="stats">
+            <div class="col">
+                <div class="stat">250</div>
+                <div class="label">Connections</div>
+            </div>
+
+            <div class="col">
+                <div class="stat">10</div>
+                <div class="label">Followers</div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="button"><button>Follow</button></div>
+            <div class="button"><button>Connect</button></div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
