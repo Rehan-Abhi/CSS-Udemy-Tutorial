@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Card</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Open Sans";
+            background-color: #afa894;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            width: 100%;
+            
+            
+        }
+        .card{
+            width: 300px;
+            height: 480px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            background-color: #ebeae3;
+            
+
+        }
+        .card > *:not(.shirt-image){
+            padding: 5px 10px;
+        }
+        .card img{
+            width: 100%;
+            height: 180px ;
+            border-radius: 5px;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+        }
+        .view-btn a{
+            text-decoration: none;
+            border: 1.5px #158fe7 solid;
+            padding: 5px 15px;
+            color: #158fe7;
+        }
+        .buttons{
+            display: flex;
+            gap: 15px;
+        }
+        .buy-now button{
+            border: 0;
+            outline: 0;
+            background-color: #38a423;
+            color: #fff;
+            padding: 5px 15px;
+            font-size: large;
+            border-radius: 3px;
+
+        }
+        .add-to-cart button{
+            border: 0;
+            outline: 0;
+            background-color: #fff;
+            padding: 5px 15px;
+            font-size: medium;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="shirt-image"><img src="shirt.avif" alt="shirt image"></div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="title">
+                        <h4>Crazyy T-Shirt</h4>
+                        <h3>$50</h3>
+                    </div>
+                    <div class="view-btn">
+                        <a href="">View Details</a>
+                    </div>
+                </div>
+                <hr/>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, assumenda?</p>
+                <div class="buttons">
+                    <div class="buy-now"><button>Buy Now</button></div>
+                    <div class="add-to-cart"><button>Add to cart</button></div>
+
+                </div>
+
+                
+                
+            </div>
+            
+
+        </div>
+    </div>
+</body>
+</html>
