@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body{
+          padding: 0;
+          margin: 0;
+          background-color: #0a0000;
+          color: #fff;
+            background: linear-gradient(135deg, #ffff00, #4169e1);
+
+        }
+        .container-fluid{
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          width: 100vw;
+          justify-content: space-between;
+
+        }
+        .card{
+          background-color: #000;
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+            box-shadow: 0 4px 6px 0 rgb(219, 207, 207);
+        }
+        .card :hover{
+          background-color: #222;
+        }
+        .card .btn{
+          margin-top: auto;          
+        }
+        .btn :hover{
+          background-color: #390ceb;
+        }
+        .card-body{
+          display: flex;
+          flex-direction: column;
+      
+        }
+        .cards{
+          display: flex;
+          justify-content: space-around;
+
+        }
+
+        #carouselExampleIndicators{
+          height: 30vh;
+          background:#000;
+          box-shadow: 0 4px 6px 0 rgb(219, 207, 207);
+
+          
+         
+        }
+        .carousel-inner{
+          height: 30vh;
+        }
+        .carousel-inner img{
+          height: 30vh;
+          object-position: center;
+          object-fit: contain;
+        }
+        @media (max-width:640px) {
+          .cards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px 0px;
+            gap: 50px;
+        
+          }
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container-fluid"> <!--note- we cannot use the class 'container' because that is a built-in class in bootstrap.-->
+        <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src= "https://i.ytimg.com/vi/Hr5iLG7sUa0/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLC25jGFEo9Tvmw4AdXYsAwWl8kbrw" class="d-block w-100" alt="photo1">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.ytimg.com/vi/-GoKoR6aLcY/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAUvxGxTLe3DsAm6TEwxKfrXFJIlQ" class="d-block w-100" alt="photo2">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.ytimg.com/vi/yY0bKZNYmJs/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBCanlzbOosvftN4DfYah13uXpBVg" class="d-block w-100" alt="photo3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+        </div>
+        <div class="cards">
+          <div class=" card card-one" style="width: 18rem;">
+  <img src="https://i.ytimg.com/vi/cvoLc3deAdQ/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAogli1cvpPwZ8qAfzhRFNZxEJ1Rg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Local Setup</h5>
+    <p class="card-text">Setting up local setup for javascript engine on VS code effectively.</p>
+    <a href="https://youtu.be/cvoLc3deAdQ?si=HpHa3FStKCj4S0Ht" class="btn btn-primary">Watch</a>
+  </div>
+          </div>
+          <div class=" card card-two" style="width: 18rem;">
+  <img src="https://i.ytimg.com/vi/4lb2pXWWXJI/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLB-0lNMoFJj7qknlWFgn-5ny7Vt1g" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Objects in JS</h5>
+    <p class="card-text">Strengthens your basics on the datatype of objects in javascript coverign all the basic knowledge you need to get started.</p>
+    <a href="https://youtu.be/vVYOHmqQDCU?si=dpygey2Do4tnMUcG" class="btn btn-primary">Watch</a>
+  </div>
+          </div>
+          <div class=" card card-three" style="width: 18rem;">
+  <img src="https://i.ytimg.com/vi/DcjNkHtDj8A/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDLewOkqb6yeu_xLR4HSnmKiLPvjA" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">DOM</h5>
+    <p class="card-text">Moving forward towards the most interesting part of javascript where we learn about the document object model and manipulation and selecting elements on the browser..</p>
+    <a href="https://youtu.be/DcjNkHtDj8A?si=YqPp7KRio_J-cH9d" class="btn btn-primary">Watch</a>
+  </div>
+          </div>
+        </div>
+        <div class="copyright"> &copy;2026 Rehan Abhi - All rights reserved</div>
+    </div>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+
+    </script>
+
+</html>
